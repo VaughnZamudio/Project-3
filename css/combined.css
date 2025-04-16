@@ -1,1 +1,236 @@
+/* General styles for all pages */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation styles */
+#navigation {
+  background-color: #333;
+  list-style-type: none;
+  padding: 10px;
+  text-align: center;
+}
+
+#navigation li {
+  display: inline;
+  margin: 10px;
+}
+
+#navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#navigation a:hover {
+  color: #f1f1f1;
+}
+
+/* Page-specific styles for index.html */
+.index-page #main-heading {
+  color: #444;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.index-page #name {
+  color: #007bff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.index-page #intro {
+  text-align: center;
+  font-size: 18px;
+}
+
+.index-page #pets-heading, 
+.index-page #sports-heading, 
+.index-page #music-heading, 
+.index-page #reading-heading {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.index-page p {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.index-page #pet-image {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Page-specific styles for resume.html */
+.resume-page #main-heading {
+  text-align: center;
+  font-size: 32px;
+  color: #2c3e50;
+}
+
+.resume-page #name {
+  text-align: center;
+  font-size: 28px;
+  color: #4e73df;
+}
+
+.resume-page #contact-info {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.resume-page #contact-info li {
+  font-size: 18px;
+  margin: 8px;
+}
+
+.resume-page #education-heading {
+  color: #4e73df;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.resume-page #high-school, 
+.resume-page #university {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-left: 5px solid #4e73df;
+  margin-bottom: 20px;
+}
+
+.resume-page #club-heading, 
+.resume-page #dog-walker-heading, 
+.resume-page #haunted-house-heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center;
+}
+
+.resume-page p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.resume-page #club-description, 
+.resume-page #dog-walker-description, 
+.resume-page #haunted-house-description {
+  font-style: italic;
+  margin: 10px;
+}
+
+/* Page-specific styles for winnie.html */
+.winnie-page #winnie-cover {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid #2c3e50;
+  padding: 5px;
+}
+
+.winnie-page #main-heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.winnie-page #sub-heading {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  color: #f39c12;
+}
+
+.winnie-page p {
+  font-size: 18px;
+  margin: 15px 0;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.winnie-page #winnie-image {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #2c3e50;
+  padding: 5px;
+  width: 300px;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  /* Mobile-specific styles */
+  .index-page #main-heading,
+  .index-page #name {
+    font-size: 24px;
+  }
+
+  .index-page #pets-heading, 
+  .index-page #sports-heading, 
+  .index-page #music-heading, 
+  .index-page #reading-heading {
+    font-size: 20px;
+  }
+
+  .index-page p {
+    font-size: 16px;
+  }
+
+  .index-page #pet-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .resume-page #main-heading,
+  .resume-page #name {
+    font-size: 24px;
+  }
+
+  .resume-page #education-heading, 
+  .resume-page #club-heading, 
+  .resume-page #dog-walker-heading, 
+  .resume-page #haunted-house-heading {
+    font-size: 20px;
+  }
+
+  .resume-page #high-school, 
+  .resume-page #university, 
+  .resume-page #club-description, 
+  .resume-page #dog-walker-description, 
+  .resume-page #haunted-house-description {
+    font-size: 16px;
+  }
+
+  .winnie-page #main-heading {
+    font-size: 28px;
+  }
+
+  .winnie-page #sub-heading {
+    font-size: 18px;
+  }
+
+  .winnie-page p {
+    font-size: 16px;
+  }
+
+  .winnie-page #winnie-image {
+    width: 100%;
+    height: auto;
+  }
+}
 
