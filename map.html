@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Interactive Google Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/combined.css" />
+  <script>
+    let map;
+
+    function initMap() {
+      const centerCoords = { lat: 41.8781, lng: -87.6298 }; // Chicago
+
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: centerCoords,
+        zoom: 12,
+        mapTypeControl: false,
+        zoomControlOptions: {
+          position: google.maps.ControlPosition.LEFT_CENTER
+        },
+        styles: [
+          { featureType: "water", stylers: [{ color: "#a0d6d1" }] },
+          { featureType: "landscape", stylers: [{ color: "#f2f2f2" }] },
+          { featureType: "road", stylers: [{ saturation: -100 }] }
+        ]
+      });
+
+      const defaultMarker = new google.maps.Marker({
+        position: centerCoords,
+        map,
+        title: "Welcome to Chicago!"
+      });
+
+      const infoWindow = new google.maps.InfoWindow({
+        content: "<h3>Chicago, IL</h3><p>The Windy City!</p>"
+      });
+
+      defaultMarker.addListener("click", () => {
+        infoWindow.open(map, defaultMarker);
+      });
+
+      // Click to add marker
+      map.addListener("click", (e) => {
+        new google.maps.Marker({
+          position: e.latLng,
+          map
+        });
+      });
+
+      // Geolocation
+      const locationButton = document.createElement("button");
+      locationButton.textContent = "Find My Location";
+      locationButton.classList.add("custom-map-control-button");
+      map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+
+      locationButton.addEventListener("click", () => {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              const pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+              };
+              map.setCenter(pos);
+              new google.maps.Marker({
+                position: pos,
+                map,
+                title: "You are here!"
+              });
+            },
+            () => {
+              alert("Geolocation failed.");
+            }
+          );
+        } else {
+          alert("Your browser doesn't support geolocation.");
+        }
+      });
+    }
+  </script>
+</head>
+
+<body class="map-page">
+  <h1 id="main-heading">My Interactive Map</h1>
+  <div id="map"></div>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=initMap"></script>
+</body>
+</html>
