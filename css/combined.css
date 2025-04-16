@@ -1,3 +1,4 @@
+/* ========== INDEX PAGE STYLES ========== */
 .index-page {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
@@ -143,6 +144,7 @@
   margin-bottom: 20px;
 }
 
+/* Responsive: Index */
 @media (max-width: 768px) {
   .index-page #pet-image,
   .index-page #sports-video {
@@ -155,27 +157,22 @@
   .index-page #navigation {
     padding: 5px;
   }
-
   .index-page #navigation li {
     display: block;
     margin: 6px 0;
   }
-
   .index-page #navigation a {
     font-size: 16px;
     padding: 8px 0;
     display: block;
   }
-
   .index-page #main-heading {
     font-size: 20px;
     padding-top: 12px;
   }
-
   .index-page #name {
     font-size: 18px;
   }
-
   .index-page #intro,
   .index-page #pets-info,
   .index-page #sports-info,
@@ -191,26 +188,22 @@
     font-size: 14px;
     padding: 8px 5px;
   }
-
   .index-page #pet-image {
     width: 80vw;
     max-width: 95vw;
     height: auto;
     border-width: 3px;
   }
-
   .index-page #sports-video {
     width: 100vw;
     max-width: 98vw;
     height: auto;
     border-width: 3px;
   }
-
   .index-page h3 {
     font-size: 16px;
     padding: 5px 0;
   }
-
   .index-page #pet-image-description,
   .index-page #sports-video-description {
     font-size: 12px;
@@ -218,10 +211,108 @@
   }
 }
 
-/* ===== rest of your original CSS (unchanged) ===== */
-
+/* ========== RESUME PAGE STYLES ========== */
 .resume-page {
-  /* ...unchanged... */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-page #navigation {
+  background-color: #333;
+  list-style-type: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.resume-page #navigation li {
+  display: inline;
+  margin: 10px;
+}
+
+.resume-page #navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.resume-page #navigation a:hover {
+  color: #f1f1f1;
+}
+
+.resume-page #main-heading {
+  color: #444;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.resume-page #name {
+  color: #007bff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.resume-page #contact-info {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.resume-page #contact-info li {
+  font-size: 18px;
+  margin: 8px;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  padding: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-page #education-heading {
+  color: #4e73df;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.resume-page #high-school,
+.resume-page #university {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-left: 5px solid #4e73df;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-page #club-heading,
+.resume-page #dog-walker-heading,
+.resume-page #haunted-house-heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+}
+
+.resume-page #club-heading { color: darkgreen; }
+.resume-page #dog-walker-heading { color: #d45f6e; }
+.resume-page #haunted-house-heading { color: #f1c40f; }
+
+.resume-page #club-description,
+.resume-page #dog-walker-description,
+.resume-page #haunted-house-description {
+  text-align: justify;
+  font-size: 18px;
+  font-style: italic;
+  margin: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -246,8 +337,89 @@
   }
 }
 
+/* ========== WINNIE PAGE STYLES ========== */
 .winnie-page {
-  /* ...unchanged... */
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.winnie-page #navigation {
+  background-color: #333;
+  list-style-type: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.winnie-page #navigation li {
+  display: inline;
+  margin: 10px;
+}
+
+.winnie-page #navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.winnie-page #navigation a:hover {
+  color: #f1f1f1;
+}
+
+.winnie-page #main-heading {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.winnie-page #sub-heading {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  color: #f39c12;
+}
+
+.winnie-page #winnie-cover {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid #2c3e50;
+  padding: 5px;
+}
+
+.winnie-page #winnie-image {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #2c3e50;
+  padding: 5px;
+}
+
+.winnie-page #dialogue1,
+.winnie-page #dialogue2,
+.winnie-page #dialogue3,
+.winnie-page #dialogue4,
+.winnie-page #dialogue5,
+.winnie-page #dialogue6,
+.winnie-page #dialogue7,
+.winnie-page #dialogue8,
+.winnie-page #dialogue9,
+.winnie-page #dialogue10,
+.winnie-page #dialogue11,
+.winnie-page #dialogue12,
+.winnie-page #dialogue13,
+.winnie-page #dialogue14,
+.winnie-page #dialogue15,
+.winnie-page #dialogue16,
+.winnie-page #dialogue17,
+.winnie-page #dialogue18 {
+  font-size: 18px;
+  margin: 15px 0;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -286,3 +458,62 @@
     height: auto;
   }
 }
+
+/* ========== MAP PAGE STYLES ========== */
+.map-page {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.map-page #main-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+  color: #444;
+}
+
+.map-page #map {
+  height: 80vh;
+  width: 90%;
+  margin: 20px auto;
+  border: 4px solid #ccc;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.custom-map-control-button {
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.custom-map-control-button:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 600px) {
+  .map-page #main-heading {
+    font-size: 20px;
+  }
+
+  .map-page #map {
+    height: 70vh;
+    width: 95%;
+  }
+}
+
+
+
+
+
+
+
