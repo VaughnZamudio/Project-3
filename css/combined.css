@@ -1,37 +1,34 @@
-/* General styles for all pages */
-body {
+.index-page {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #f4f4f9;
   color: #333;
   text-align: left;
   margin: 0;
   padding: 0;
 }
 
-/* Navigation styles */
-#navigation {
+.index-page #navigation {
   background-color: #333;
   list-style-type: none;
   padding: 10px;
   text-align: center;
 }
 
-#navigation li {
+.index-page #navigation li {
   display: inline;
   margin: 10px;
 }
 
-#navigation a {
+.index-page #navigation a {
   color: white;
   text-decoration: none;
   font-size: 18px;
 }
 
-#navigation a:hover {
+.index-page #navigation a:hover {
   color: #f1f1f1;
 }
 
-/* Page-specific styles for index.html */
 .index-page #main-heading {
   color: #444;
   text-align: center;
@@ -50,39 +47,155 @@ body {
 .index-page #intro {
   text-align: center;
   font-size: 18px;
+  margin-top: 10px;
+  font-style: italic;
 }
 
-.index-page #pets-heading, 
-.index-page #sports-heading, 
-.index-page #music-heading, 
-.index-page #reading-heading {
-  font-size: 22px;
-  margin-top: 20px;
+.index-page #pets-heading {
+  color: green;
+  font-size: 24px;
+  text-align: center;
 }
 
-.index-page p {
+.index-page #pets-info {
+  text-align: justify;
+  padding: 10px;
   font-size: 18px;
-  margin: 10px;
+}
+
+.index-page #pet-image-description {
+  text-align: center;
+  font-style: italic;
 }
 
 .index-page #pet-image {
+  width: 100px;
+  height: 100px;
   display: block;
-  margin: 10px auto;
-  width: 100%;
-  max-width: 500px;
+  margin: 0 auto;
+  border: 5px solid #ccc;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Page-specific styles for resume.html */
+.index-page #sports-heading {
+  color: darkblue;
+  text-align: center;
+}
+
+.index-page #sports-info {
+  text-align: justify;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.index-page #sports-video-description {
+  text-align: center;
+  font-style: italic;
+}
+
+.index-page #sports-video {
+  display: block;
+  margin: 0 auto;
+  width: 480px;
+  height: 640px;
+  border: 5px solid #ccc;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.index-page #music-heading {
+  color: #d45f6e;
+  text-align: center;
+  font-size: 24px;
+}
+
+.index-page #album-goal,
+.index-page #music-info,
+.index-page #music-taste,
+.index-page #favorite-albums {
+  text-align: justify;
+  padding: 10px;
+  font-size: 18px;
+  font-style: italic;
+  background-color: #f0f0f0;
+  border-left: 5px solid #d45f6e;
+  margin-bottom: 20px;
+}
+
+.index-page #reading-heading {
+  color: #4e73df;
+  font-size: 24px;
+  text-align: center;
+}
+
+.index-page #reading-info,
+.index-page #started-reading,
+.index-page #classic-preference,
+.index-page #fantasy-reading,
+.index-page #graphic-novels {
+  text-align: justify;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.index-page #graphic-novels {
+  background-color: #f0f0f0;
+  border-left: 5px solid #4e73df;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .index-page #pet-image,
+  .index-page #sports-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.resume-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-page #navigation {
+  background-color: #333;
+  list-style-type: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.resume-page #navigation li {
+  display: inline;
+  margin: 10px;
+}
+
+.resume-page #navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.resume-page #navigation a:hover {
+  color: #f1f1f1;
+}
+
 .resume-page #main-heading {
+  color: #444;
   text-align: center;
   font-size: 32px;
-  color: #2c3e50;
+  font-weight: bold;
+  padding-top: 20px;
 }
 
 .resume-page #name {
+  color: #007bff;
   text-align: center;
   font-size: 28px;
-  color: #4e73df;
+  font-weight: bold;
 }
 
 .resume-page #contact-info {
@@ -94,6 +207,10 @@ body {
 .resume-page #contact-info li {
   font-size: 18px;
   margin: 8px;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  padding: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .resume-page #education-heading {
@@ -103,7 +220,7 @@ body {
   margin-top: 20px;
 }
 
-.resume-page #high-school, 
+.resume-page #high-school,
 .resume-page #university {
   text-align: center;
   font-size: 18px;
@@ -112,42 +229,100 @@ body {
   background-color: #f0f0f0;
   border-left: 5px solid #4e73df;
   margin-bottom: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.resume-page #club-heading, 
-.resume-page #dog-walker-heading, 
+.resume-page #club-heading,
+.resume-page #dog-walker-heading,
 .resume-page #haunted-house-heading {
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
   font-size: 22px;
+}
+
+.resume-page #club-heading {
+  color: darkgreen;
+}
+
+.resume-page #dog-walker-heading {
+  color: #d45f6e;
+}
+
+.resume-page #haunted-house-heading {
+  color: #f1c40f;
+}
+
+.resume-page #club-description,
+.resume-page #dog-walker-description,
+.resume-page #haunted-house-description {
+  text-align: justify;
+  font-size: 18px;
+  font-style: italic;
+  margin: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .resume-page #main-heading,
+  .resume-page #name {
+    font-size: 24px;
+  }
+
+  .resume-page #education-heading,
+  .resume-page #club-heading,
+  .resume-page #dog-walker-heading,
+  .resume-page #haunted-house-heading {
+    font-size: 20px;
+  }
+
+  .resume-page #high-school,
+  .resume-page #university,
+  .resume-page #club-description,
+  .resume-page #dog-walker-description,
+  .resume-page #haunted-house-description {
+    font-size: 16px;
+  }
+}
+
+
+.winnie-page {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.winnie-page #navigation {
+  background-color: #333;
+  list-style-type: none;
+  padding: 10px;
   text-align: center;
 }
 
-.resume-page p {
-  font-size: 18px;
-  text-align: justify;
-}
-
-.resume-page #club-description, 
-.resume-page #dog-walker-description, 
-.resume-page #haunted-house-description {
-  font-style: italic;
+.winnie-page #navigation li {
+  display: inline;
   margin: 10px;
 }
 
-/* Page-specific styles for winnie.html */
-.winnie-page #winnie-cover {
-  display: block;
-  margin: 0 auto;
-  border: 5px solid #2c3e50;
-  padding: 5px;
+.winnie-page #navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.winnie-page #navigation a:hover {
+  color: #f1f1f1;
 }
 
 .winnie-page #main-heading {
+  color: #2c3e50;
   text-align: center;
   font-size: 32px;
   font-weight: bold;
-  color: #2c3e50;
+  padding-top: 20px;
 }
 
 .winnie-page #sub-heading {
@@ -157,7 +332,31 @@ body {
   color: #f39c12;
 }
 
-.winnie-page p {
+.winnie-page #winnie-cover {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid #2c3e50;
+  padding: 5px;
+}
+
+.winnie-page #dialogue1,
+.winnie-page #dialogue2,
+.winnie-page #dialogue3,
+.winnie-page #dialogue4,
+.winnie-page #dialogue5,
+.winnie-page #dialogue6,
+.winnie-page #dialogue7,
+.winnie-page #dialogue8,
+.winnie-page #dialogue9,
+.winnie-page #dialogue10,
+.winnie-page #dialogue11,
+.winnie-page #dialogue12,
+.winnie-page #dialogue13,
+.winnie-page #dialogue14,
+.winnie-page #dialogue15,
+.winnie-page #dialogue16,
+.winnie-page #dialogue17,
+.winnie-page #dialogue18 {
   font-size: 18px;
   margin: 15px 0;
   line-height: 1.6;
@@ -169,53 +368,9 @@ body {
   margin: 0 auto;
   border: 3px solid #2c3e50;
   padding: 5px;
-  width: 300px;
-  height: 400px;
 }
 
 @media (max-width: 768px) {
-  /* Mobile-specific styles */
-  .index-page #main-heading,
-  .index-page #name {
-    font-size: 24px;
-  }
-
-  .index-page #pets-heading, 
-  .index-page #sports-heading, 
-  .index-page #music-heading, 
-  .index-page #reading-heading {
-    font-size: 20px;
-  }
-
-  .index-page p {
-    font-size: 16px;
-  }
-
-  .index-page #pet-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .resume-page #main-heading,
-  .resume-page #name {
-    font-size: 24px;
-  }
-
-  .resume-page #education-heading, 
-  .resume-page #club-heading, 
-  .resume-page #dog-walker-heading, 
-  .resume-page #haunted-house-heading {
-    font-size: 20px;
-  }
-
-  .resume-page #high-school, 
-  .resume-page #university, 
-  .resume-page #club-description, 
-  .resume-page #dog-walker-description, 
-  .resume-page #haunted-house-description {
-    font-size: 16px;
-  }
-
   .winnie-page #main-heading {
     font-size: 28px;
   }
@@ -224,13 +379,30 @@ body {
     font-size: 18px;
   }
 
-  .winnie-page p {
+  .winnie-page #dialogue1,
+  .winnie-page #dialogue2,
+  .winnie-page #dialogue3,
+  .winnie-page #dialogue4,
+  .winnie-page #dialogue5,
+  .winnie-page #dialogue6,
+  .winnie-page #dialogue7,
+  .winnie-page #dialogue8,
+  .winnie-page #dialogue9,
+  .winnie-page #dialogue10,
+  .winnie-page #dialogue11,
+  .winnie-page #dialogue12,
+  .winnie-page #dialogue13,
+  .winnie-page #dialogue14,
+  .winnie-page #dialogue15,
+  .winnie-page #dialogue16,
+  .winnie-page #dialogue17,
+  .winnie-page #dialogue18 {
     font-size: 16px;
   }
 
-  .winnie-page #winnie-image {
+  .winnie-page #winnie-image,
+  .winnie-page #winnie-cover {
     width: 100%;
     height: auto;
   }
 }
-
