@@ -1,3 +1,26 @@
+/* ========== UNIVERSAL NAVIGATION STYLES ========== */
+#navigation {
+  background-color: #333;
+  list-style-type: none;
+  padding: 10px;
+  text-align: center;
+}
+
+#navigation li {
+  display: inline;
+  margin: 10px;
+}
+
+#navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#navigation a:hover {
+  color: #f1f1f1;
+}
+
 /* ========== INDEX PAGE STYLES ========== */
 .index-page {
   font-family: Arial, sans-serif;
@@ -6,28 +29,6 @@
   text-align: left;
   margin: 0;
   padding: 0;
-}
-
-.index-page #navigation {
-  background-color: #333;
-  list-style-type: none;
-  padding: 10px;
-  text-align: center;
-}
-
-.index-page #navigation li {
-  display: inline;
-  margin: 10px;
-}
-
-.index-page #navigation a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.index-page #navigation a:hover {
-  color: #f1f1f1;
 }
 
 .index-page #main-heading {
@@ -154,16 +155,16 @@
 }
 
 @media (max-width: 480px) {
-  .index-page #navigation {
+  #navigation {
     padding: 5px;
   }
 
-  .index-page #navigation li {
+  #navigation li {
     display: block;
     margin: 6px 0;
   }
 
-  .index-page #navigation a {
+  #navigation a {
     font-size: 16px;
     padding: 8px 0;
     display: block;
@@ -228,28 +229,6 @@
   text-align: left;
   margin: 0;
   padding: 0;
-}
-
-.resume-page #navigation {
-  background-color: #333;
-  list-style-type: none;
-  padding: 10px;
-  text-align: center;
-}
-
-.resume-page #navigation li {
-  display: inline;
-  margin: 10px;
-}
-
-.resume-page #navigation a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.resume-page #navigation a:hover {
-  color: #f1f1f1;
 }
 
 .resume-page #main-heading {
@@ -356,28 +335,6 @@
   padding: 0;
 }
 
-.winnie-page #navigation {
-  background-color: #333;
-  list-style-type: none;
-  padding: 10px;
-  text-align: center;
-}
-
-.winnie-page #navigation li {
-  display: inline;
-  margin: 10px;
-}
-
-.winnie-page #navigation a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.winnie-page #navigation a:hover {
-  color: #f1f1f1;
-}
-
 .winnie-page #main-heading {
   color: #2c3e50;
   text-align: center;
@@ -462,7 +419,7 @@
   }
 }
 
-/* ========== MAP PAGE STYLES ========== */
+/* ========== MAP PAGE STYLES & RESPONSIVE ========== */
 .map-page {
   font-family: Arial, sans-serif;
   background-color: #fff;
@@ -503,7 +460,6 @@
   background-color: #f0f0f0;
 }
 
-/* ========== MAP PAGE MEDIA QUERIES ========== */
 @media (max-width: 600px) {
   .map-page #main-heading {
     font-size: 20px;
